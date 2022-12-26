@@ -1,0 +1,254 @@
+style.css
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	list-style: none;
+}
+header{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 90%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 5%;
+}
+.logo{
+	color: #bb0404;
+	font-size: 35px;
+	font-weight: 800;
+}
+span{
+	color: #1b0505e0;
+}
+.navlist{
+	display: flex;
+}
+.navlist a{
+	color: #b80000;
+	font-size: 1rem;
+	font-weight: 500;
+	padding: 5px 5px;
+	margin: 0 22px;
+	border-bottom: 2px solid transparent;
+	transition: all .40s ease;
+}
+.navlist a:hover{
+	color: #f30909;
+	border-bottom: 2px solid #5f2714;
+}
+.icons{
+	display: flex;
+	align-items: center;
+}
+.icons i{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 35px;
+	width: 35px;
+	background: #ca7c62;
+	color: rgb(3, 3, 3);
+	font-size: 18px;
+	margin: 0 10px;
+	border-radius: 10px;
+	border: 1px solid transparent;
+	transition: all .40s ease;
+}
+.icons i:hover{
+	border: 1px solid #3e1908;
+	color: #3e1908;
+	background: transparent;
+}
+#menu-icon{
+	color: #3e1908;
+	font-size: 26px;
+	z-index: 10001;
+	cursor: pointer;
+	margin-left: 10px;
+	display: none;
+}
+
+.main-header{
+	width: 100%;
+	height: 95vh;
+	background: url(../img/pet.png);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	align-items: center;
+}
+section{
+	padding: 0 19%;
+}
+.main-text h1{
+	margin: 15px 0;
+	font-size: 5.5rem;
+	font-weight: 800;
+	color: #3e1908;
+	letter-spacing: 2px;
+	line-height: 1.1;
+	text-transform: uppercase;
+}
+.main-text h5{
+	font-size: 1.3rem;
+	color: #ca7c62;
+	font-weight: 600;
+	letter-spacing: 5px;
+}
+.main-text p{
+	font-size: 1.1rem;
+	color: #9f9c9d;
+	line-height: 30px;
+	margin-bottom: 3rem;
+}
+.btn{
+	padding: 15px 35px;
+	color: #fff;
+	background: #ca7c62;
+	font-size: 15px;
+	font-weight: 500;
+	border-radius: 15px;
+	border: 2px solid transparent;
+	transition: all .40s ease;
+}
+.btn2{
+	background: transparent;
+	border: 2px solid #ca7c62;
+	color: #3e1908;
+	margin-left: 20px;
+	transition: all .40s ease;
+}
+.btn:hover{
+	background: transparent;
+	border: 2px solid #ca7c62;
+	color: #3e1908;
+}
+.btn2:hover{
+	background: #ca7c62;
+	color: #fff;
+}
+
+.left{
+	position: absolute;
+	top: 50%;
+	padding: 0 5%;
+	transform: translateY(-50%);
+}
+.left i{
+	display: block;
+	margin: 28px 0;
+	font-size: 25px;
+	color: #3e1908;
+	transition: all .40s ease;
+}
+.left i:hover{
+	transform: scale(1.1) translateX(-5px);
+}
+
+.right{
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+}
+.scroll{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.right a{
+	color: #ca7c62;
+	font-size: 1.1rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.right i{
+	color: #ca7c62;
+	font-size: 25px;
+	margin-left: 5px;
+}
+
+@media (max-width: 1470px){
+	header{
+		padding: 15px 2%;
+		transition: .2s;
+	}
+	section{
+		padding: 0 2%;
+		transition: .2s;
+	}
+	.left{
+		display: none;
+	}
+	.right{
+		right: 2%;
+		transition: .2s;
+	}
+}
+
+@media (max-width: 1000px){
+	.main-text h1{
+		font-size: 3.9rem;
+		transition: .2s;
+	}
+	.main-text h5{
+		font-size: 18px;
+	}
+	.main-text p{
+		font-size: 1rem;
+	}
+	.btn{
+		padding: 11px 29px;
+		transition: .2s;
+	}
+}
+
+@media (max-width: 975px){
+	#menu-icon{
+		display: block;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		height: 35px;
+		width: 35px;
+		background: #3e1908;
+		color: #fff;
+		font-size: 25px;
+		border-radius: 10px;
+	}
+	.navlist{
+		position: absolute;
+		top: -600px;
+		left: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		background: #fbf6ef;
+		text-align: left;
+		transition: all .43s ease;
+	}
+	.navlist a{
+		font-size: 15px;
+		display: block;
+		padding: 0.5rem;
+		margin: 1.1rem;
+		border-bottom: none;
+		border-left: 2px solid #3e1908;
+	}
+	.navlist a:hover{
+		border-bottom: none;
+		background: #3e1908;
+		color: #fff;
+	}
+	.navlist.open{
+		top: 100%;
+	}
+}
